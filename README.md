@@ -9,11 +9,9 @@ que mais são utilizadas para tratamento de dados.
 - [@Victor_Gabriel](https://www.github.com/victorbr988)
 - [@Trybe](https://www.betrybe.com/)
 
-
 ## 📝 Documentation
 
 [Documentação SQL](https://dev.mysql.com/doc/)
-
 
 ## 📜 Roadmap
 
@@ -21,7 +19,7 @@ que mais são utilizadas para tratamento de dados.
 
 <details>
 <summary>SELECT UCASE</summary>
-	
+<br>
 Converte o texto da string para caixa alta
 ```javascript
 	SELECT UCASE('oi, eu sou uma string');
