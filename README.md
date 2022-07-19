@@ -20,51 +20,91 @@ que mais são utilizadas para tratamento de dados.
 <details>
 <summary>SELECT UCASE</summary>
 <br>
-Converte o texto da string para caixa alta
-```javascript
-	SELECT UCASE('oi, eu sou uma string');
+Converte o texto da string para CAIXA ALTA
+
+```sql
+SELECT UCASE('oi, eu sou uma string');
 ```
 </details> 
 
-- SELECT LCASE() => Converte o texto da string para caixa baixa
-    Exemplo SELECT LCASE('oi, eu sou uma string');
+<details>
+<summary>SELECT LCASE</summary>
+<br>
+Converte o texto da string para caixa baixa
 
-- SELECT REPLACE() => Substitui as ocorrências de umas substring em uma string
-    Exemplo 
-    SELECT REPLACE('oi, eu sou uma string', 'string', 'cadeia de caracteres');
+```sql
+SELECT LCASE('oi, eu sou uma string');
+```
+</details> 
 
-- SELECT LEFT() => Retorna a parte ESQUERDA de uma string de acordo com a quantidade de caracteres especificados.
-    Exemplo 
-    SELECT LEFT('oi, eu sou uma string', 3);
+<details>
+<summary>SELECT REPLACE</summary>
+<br>
+Substitui as ocorrências de umas substring em uma string
 
-- SELECT RIGHT() => Retorna a parte DIREITA de uma string de acordo com a 
-    quantidade de caracteres especificados.
-    Exemplo
-    SELECT RIGHT('oi, eu sou uma string', 3);
+```sql
+SELECT REPLACE('oi, eu sou uma string', 'string', 'cadeia de caracteres');
+```
+</details> 
 
-- SELECT CHAR_LENGTH() => Exibe o tamanho, em caracteres, da string, a função LENGTH retorna o tamanho em bytes.
-    Exemplo
-    SELECT CHAR_LENGTH('oi eu sou uma string')
+<details>
+<summary>SELECT LEFT</summary>
+<br>
+Retorna a parte ESQUERDA de uma string de acordo com a quantidade de caracteres especificados.
 
-- SELECT SUBSTRING() => Extrai parte de uma string de acordo com o índice de um caractere inicial e a quantidade de caracteres a extrair, se a quantidade de caracteres a extrair não for definida, então a string será extraída do índice definido, até o seu final.
-    Exemplo 
-    SELECT SUBSTRING('oi eu sou uma string', 5, 2)
-    SELECT SUBSTRING('oi eu sou uma string', 5)
+```sql
+SELECT LEFT('oi, eu sou uma string', 3);
+```
+</details>
+
+<details>
+<summary>SELECT RIGHT</summary>
+<br>
+Retorna a parte DIREITA de uma string de acordo com a quantidade de caracteres especificados.
+
+```sql
+SELECT RIGHT('oi, eu sou uma string', 3);
+```
+</details>
+
+<details>
+<summary>SELECT CHAR_LENGTH</summary>
+<br>
+Exibe o tamanho, em caracteres, da string, a função LENGTH retorna o tamanho em bytes.
+
+```sql
+SELECT CHAR_LENGTH('oi eu sou uma string')
+```
+</details>
+
+<details>
+<summary>SELECT SUBSTRING</summary>
+<br>
+Extrai parte de uma string de acordo com o índice de um caractere inicial e a quantidade de caracteres a extrair, se a quantidade de caracteres a extrair não for definida, então a string será extraída do índice definido, até o seu final.
+
+```sql
+SELECT SUBSTRING('oi eu sou uma string', 5, 2)
+SELECT SUBSTRING('oi eu sou uma string', 5)
+```
+</details>
 
 ### Condicionais IF, CASE
 
-Sintaxe: SELECT IF (condição, valor_si_verdadeiro, valor_se_falso);
+Sintaxe:
+``` sql
+SELECT IF (condição, valor_si_verdadeiro, valor_se_falso);
+```
 
 OBS: A condicional CASE é a mais adequada quando temos uma situação de múltiplas condições.
 
 sintaxe:
+```sql
 CASE
 	WHEN condição, THEN  valor_se_verdadeiro;
 	WHEN condição, THEN  valor_se_verdadeiro;
 	WHEN condição, THEN  valor_se_verdadeiro;
 ELSE condição para falso
-
-END AS nome_para_coluna => termina a query colocando essas condições dentro de uma coluna chamada valor
+```
 
 ### Funções matemáticas
 
