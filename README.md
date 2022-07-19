@@ -20,10 +20,13 @@ que mais são utilizadas para tratamento de dados.
 ### Manipulação de strings 
 
 <details>
+<summary>SELECT UCASE</summary>
+	
 Converte o texto da string para caixa alta
- <summary>SELECT UCASE</summary>
+```javascript
+	SELECT UCASE('oi, eu sou uma string');
+```
 </details> 
-    Exemplo SELECT UCASE('oi, eu sou uma string');
 
 - SELECT LCASE() => Converte o texto da string para caixa baixa
     Exemplo SELECT LCASE('oi, eu sou uma string');
