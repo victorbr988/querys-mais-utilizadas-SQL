@@ -20,8 +20,8 @@ que mais são utilizadas para tratamento de dados.
 ### Manipulação de strings 
 
 <details>
- SELECT UCASE
- <summary>Converte o texto da string para caixa alta</summary>
+Converte o texto da string para caixa alta
+ <summary>SELECT UCASE</summary>
 </details> 
     Exemplo SELECT UCASE('oi, eu sou uma string');
 
