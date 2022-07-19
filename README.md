@@ -19,7 +19,10 @@ que mais são utilizadas para tratamento de dados.
 
 ### Manipulação de strings 
 
-- SELECT UCASE Converte o texto da string para caixa alta
+<details>
+ SELECT UCASE
+ <summary>Converte o texto da string para caixa alta</summary>
+</details> 
     Exemplo SELECT UCASE('oi, eu sou uma string');
 
 - SELECT LCASE() => Converte o texto da string para caixa baixa
