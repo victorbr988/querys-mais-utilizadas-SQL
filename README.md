@@ -33,7 +33,7 @@ SELECT UCASE('oi, eu sou uma string');
 Converte o texto da string para caixa baixa
 
 ```sql
-SELECT LCASE('oi, eu sou uma string');
+SELECT LCASE('OI, EU SOU UMA STRING');
 ```
 </details> 
 
